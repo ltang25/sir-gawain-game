@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sir Gawain and the Green Knight | Text Adventure</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<main class="shell">
+  <header class="topbar"><div><span class="status-dot"></span><span class="eyebrow">A CHIVALRIC TEXT ADVENTURE</span><h1>Sir Gawain and the Green Knight</h1></div><button id="restart" type="button">↻ Restart</button></header>
+  <section class="terminal" aria-label="Game terminal">
+    <div class="terminal-top"><span>GAWAIN.EXE</span><span id="status">Loading Python engine…</span></div>
+    <div id="screen" class="screen" role="log" aria-live="off" aria-relevant="additions text"></div>
+    <form id="command-form" autocomplete="off"><label for="command">❯</label><input id="command" type="text" aria-label="Type a numbered choice or press Enter to continue" placeholder="Loading…" disabled spellcheck="false" autocomplete="off"><button id="send" disabled type="submit">Enter ↵</button></form>
+  </section>
+  <p class="footnote">Type a choice (1, 2, or 3) and press Enter. When prompted, press Enter to continue. The game runs in your browser.</p>
+</main>
+</body>
+</html>
