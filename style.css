@@ -3,7 +3,7 @@ html, body {
   margin: 0;
   min-height: 100%;
   background: #173b29;
-  color: #ffffff;
+  color: #dbe6cc;
   font-family: monospace;
   font-size: 14px;
 }
@@ -11,7 +11,7 @@ html, body {
 body { padding: 12px; }
 #restart {
   font: inherit;
-  color: #ffffff;
+  color: #aac98d;
   background: transparent;
   border: 1px solid #ffffff;
   padding: 4px 10px;
