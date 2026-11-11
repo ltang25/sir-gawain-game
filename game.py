@@ -115,7 +115,7 @@ def scene_one_dialogue_one():
 
     print(text_divider)
 
-    print(*r*"""
+    print(r"""
 
     --- THE GREEN KNIGHT ---
 
@@ -213,7 +213,7 @@ def scene_one_dialogue_two():
 
     print(text_divider)
 
-    print(*r*"""
+    print(r"""
 
     .-;`\..../`;-.
 
@@ -287,7 +287,7 @@ def scene_two_dialogue_one():
 
     print(text_divider)
 
-    print(*r*"""
+    print(r"""
 
     |\_/|,,_____,~~`
 
@@ -325,7 +325,7 @@ def scene_two_dialogue_one():
 
 def scene_two_dialogue_two():
 
-    print(*r*"""
+    print(r"""
 
                 .        +          .      .          .
 
@@ -395,7 +395,7 @@ def scene_two_dialogue_two():
 
 def scene_three_dialogue_one():
 
-    print(*r*"""
+    print(r"""
 
          /\         /\                    .           /\
 
@@ -451,7 +451,7 @@ def scene_three_dialogue_one():
 
     print(text_divider)
 
-    print(*r*"""
+    print(r"""
 
     --- LADY & LORD BERTILAK ---
 
@@ -505,7 +505,7 @@ def scene_three_dialogue_two():
 
 def scene_four_dialogue_one():  
 
-    print(*r*"""
+    print(r"""
 
             _    .  ,   .           .
 
@@ -563,7 +563,7 @@ async def scene_one():
 
     print(text_divider)
 
-    print(*r*"""
+    print(r"""
 
                             o
 
@@ -1281,7 +1281,7 @@ async def scene_five():
 
     print(text_divider)
 
-    print(*r*"""
+    print(r"""
 
                                     {} {}
 
