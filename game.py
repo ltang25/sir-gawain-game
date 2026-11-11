@@ -1,4 +1,4 @@
-    from js import gawainInput, gawainPrint
+from js import gawainInput, gawainPrint
 async def browser_input(prompt=""):
     return await gawainInput(prompt)
 def print(*values, sep=" ", end="\n"):
