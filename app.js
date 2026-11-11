@@ -3,15 +3,30 @@ const command = document.getElementById('command');
 const form = document.getElementById('command-form');
 let pendingInput = null;
 let buffer = '';
+let passageStart = null;
 
-function scrollBottom() { window.scrollTo(0, document.body.scrollHeight); }
+function scrollToPassage() {
+    if (passageStart) {
+        passageStart.scrollIntoView({
+            behavior: 'instant',
+            block: 'start'
+        });
+    }
+
 function flush() {
-  if (!buffer) return;
-  const line = document.createElement('pre');
-  line.textContent = buffer;
-  screen.append(line);
-  buffer = '';
-  scrollBottom();
+    if (!buffer) return;
+
+    const line = document.createElement('pre');
+    line.textContent = buffer;
+
+    screen.append(line);
+
+    if (!passageStart) {
+        passageStart = line;
+        requestAnimationFrame(scrollToPassage);
+    }
+
+    buffer = '';
 }
 function write(text) { buffer += String(text); if (buffer.endsWith('\n')) flush(); }
 window.gawainPrint = write;
@@ -22,12 +37,16 @@ window.gawainInput = prompt => new Promise(resolve => {
   pendingInput = resolve;
   command.disabled = false;
   command.focus();
-  scrollBottom();
+  requestAnimationFrame(scrollToPassage);
+
 });
 form.addEventListener('submit', event => {
-  event.preventDefault();
-  if (!pendingInput) return;
-  const value = command.value;
+    event.preventDefault();
+    if (!pendingInput) return;
+
+    passageStart = null;
+
+    const value = command.value;
   command.value = '';
   write(value + '\n');
   flush();
