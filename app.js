@@ -44,8 +44,6 @@ form.addEventListener('submit', event => {
     event.preventDefault();
     if (!pendingInput) return;
 
-    passageStart = null;
-
     const value = command.value;
   command.value = '';
   write(value + '\n');
@@ -53,7 +51,8 @@ form.addEventListener('submit', event => {
   const resolve = pendingInput;
   pendingInput = null;
   command.disabled = true;
-  resolve(value);
+    passageStart = null;
+    resolve(value);
 });
 document.getElementById('restart').addEventListener('click', () => location.reload());
 screen.addEventListener('click', () => { if (!command.disabled) command.focus(); });
