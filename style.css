@@ -35,4 +35,11 @@ main { width: 100%; }
   padding: 0;
   width: min(95%, 600px);
 }
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
 #command:disabled { display: none; }
