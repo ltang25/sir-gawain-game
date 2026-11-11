@@ -12,7 +12,7 @@ function scrollToPassage() {
             block: 'start'
         });
     }
-
+}
 function flush() {
     if (!buffer) return;
 
