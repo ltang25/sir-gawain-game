@@ -794,6 +794,8 @@ async def scene_three():
 
         print("The lady tells you that she finally had time to do the laundry since you bathed yourself.")
 
+        print("She says that the girdle is magical and will protect you from harm.")
+
         print("Green isn't really your color, but it's a nice gift.")
 
         print(text_divider)
@@ -1118,23 +1120,21 @@ async def scene_four():
 
                 print(text_divider)
 
-                print("The Green Knight looks at you in confusion.")
+                print("The Green Knight looks at you disdainfully.")
 
                 print("Maybe he doesn't like girdles.")
 
-                print("Clearly, he thinks you have a few screws loose.")
-
-                print("His gaze changes to pity.")
-
                 print("He reveals that he was Lord Bertilak all along.")
 
-                print("He lets you go, calling off the game.")
+                print("He scorns you for trying to get out of the deal with a woman's garment.")
 
-                print("Uh oh... Now everyone will think you're too dumb to play a game.")
+                print("Especially since it was going to protect you anyways.")
+
+                print("Was this really your last resort?")
 
                 print("Next time, don't try to be different.")
 
-                print("At least you didn't get hit.")
+                print("He lets you go.")
 
                 print(text_divider)
 
@@ -1235,7 +1235,7 @@ async def scene_five():
 
         print(" ")
 
-        print(" ✦ FOOLISHNESS ENDING ✦ ")
+        print(" ✦ COWARDLY ENDING ✦ ")
 
         print(" ")
 
@@ -1243,26 +1243,21 @@ async def scene_five():
 
         print("You tell the knights how you escaped the Green Knight.")
 
-        print("You even explain your brilliant idea of offering him a girdle.")
+        print("When they ask you how, you go silent.")
 
-        print("The room goes silent.")
+        print("The truth is going to come out one way or another.")
 
-        print("Someone starts laughing.")
+        print("You might as well confess what you did.")
 
         print("Soon, the entire round table is laughing at you.")
 
-        print("You try to explain that it was a peace offering.")
+        print("They've never seen such a cowardly knight.")
 
-        print("Somehow, that makes it worse.")
+        print("You've tarnished their reputation.")
 
         print("King Arthur pats you on the shoulder.")
 
-        print("He tells you that at least you tried.")
-
-        print("How comforting.")
-
-        print("Maybe next time, you should just follow the rules.")
-
+        print("He tells you to just sit there quietly next time.")
 
 
     elif ending == "bravery":
